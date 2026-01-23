@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>QuickBuy Delivery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<logo id="logo">
+     فٹافت
+</logo>
+<h1>
+    🛵 G13, G14, H13, G15, G16 and F15<br>
+     Daily Items Delivery</h1>
+
+<!-- Pickup Store -->
+<div class="box">
+
+<h3>Pickup Category</h3>
+<select id="storeSelect">
+  <option value="">-- Select category --</option>
+  <option>Grocery</option>
+  <option>Vegetables & Fruits</option>
+  <option>Bakery</option>
+  <option>Milk & Dairy</option>
+  <option>Medical / Pharmacy</option>
+  <option>Restaurant / Food</option>
+  <option>Mobile & Electronics</option>
+  <option>Cosmetics & Beauty</option>
+  <option>Stationery & Books</option>
+  <option>Courier / Parcel</option>
+  <option>Laundry / Dry Cleaning</option>
+  <option>Flowers & Gifts</option>
+  <option>Pet Supplies</option>
+  <option>Documents Delivery</option>
+  <option>Meat and Chicken</option>
+  
+
+<div class="hoverable">
+  <!-- Your existing <select id="storeSelect"> stays as it is -->
+
+  <!-- Add this popup for hover -->
+  <div class="popup" id="hoverPopup">
+    <ul>
+      <li>Grocery: Rice, Flour, Sugar</li>
+      <li>Vegetables & Fruits: Tomato, Apple, Banana</li>
+      <li>Bakery: Biscuit, Cake, Bread, Pastry</li>
+      <li>Milk & Dairy: Milk, Yogurt, Cheese</li>
+      <li>Medical / Pharmacy: Medicine, Bandages</li>
+      <li>Restaurant / Food: Pizza, Burger, Sandwich</li>
+      <li>Mobile & Electronics: Phone, Charger, Earphones</li>
+      <li>Cosmetics & Beauty: Lipstick, Lotion, Perfume</li>
+      <li>Stationery & Books: Notebook, Pen, Books</li>
+      <li>Courier / Parcel: Envelope, Package</li>
+      <li>Laundry / Dry Cleaning: Shirt, Pants</li>
+      <li>Flowers & Gifts: Rose, Bouquet, Teddy</li>
+      <li>Pet Supplies: Dog Food, Cat Toy</li>
+      <li>Documents Delivery: Contract, Letter</li>
+      <li>Meat and Chicken: Chicken, Beef, Mutton</li>
+    </ul>
+  </div>
+</div>
+
+
+
+
+
+
+<div class="customer-comments">
+  <label for="remarks"><strong>Comments / Remarks:</strong></label><br>
+  <textarea id="remarks" name="remarks" rows="4" cols="50" placeholder="Write your comments or special instructions here..."></textarea>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </select>
+  <input type="text" id="customStore" placeholder="Or type store name">
+</div>
+
+<!-- Categories -->
+<h2>🍳 Kitchen Items</h2>
+
+<details>
+  <summary>🛢️ Cooking Oil (Select Brand)</summary>
+
+  <label><input type="checkbox" data-name="Canola Oil 1L" data-price="680"> Canola – 680 PKR</label><br>
+  <label><input type="checkbox" data-name="Dalda Cooking Oil 1L" data-price="650"> Dalda – 650 PKR</label><br>
+  <label><input type="checkbox" data-name="Eva Oil 1L" data-price="600"> Eva – 600 PKR</label><br>
+  <label><input type="checkbox" data-name="Fry Oil 1L" data-price="640"> Fry – 640 PKR</label><br>
+  <label><input type="checkbox" data-name="Habib Cooking Oil 1L" data-price="630"> Habib – 630 PKR</label><br>
+  <label><input type="checkbox" data-name="Kashmir Oil 1L" data-price="625"> Kashmir – 625 PKR</label><br>
+  <label><input type="checkbox" data-name="Kisan Oil 1L" data-price="620"> Kisan – 620 PKR</label><br>
+  <label><input type="checkbox" data-name="Meezan Oil 1L" data-price="610"> Meezan – 610 PKR</label><br>
+  <label><input type="checkbox" data-name="Shan Oil 1L" data-price="650"> Shan – 650 PKR</label><br>
+  <label><input type="checkbox" data-name="Soya Supreme 1L" data-price="660"> Soya Supreme – 660 PKR</label><br>
+  <label><input type="checkbox" data-name="Sufi Cooking Oil 1L" data-price="640"> Sufi – 640 PKR</label><br>
+  <label><input type="checkbox" data-name="Sultan Oil 1L" data-price="615"> Sultan – 615 PKR</label>
+
+</details>
+
+
+
+  <div class="item"><input type="checkbox" data-name="Sugar 1kg" 
+    data-price="180"> Sugar 1kg – 180</div>
+  <div class="item"><input type="checkbox" data-name="Salt Pack" data-price="80"> Salt – 80</div>
+  <div class="item"><input type="checkbox" data-name="Tea Pack" data-price="420"> Tea – 420</div>
+  <div class="item"><input type="checkbox" data-name="Milk Pack" data-price="220"> Milk – 220</div>
+  <div class="item"><input type="checkbox" data-name="Bread" data-price="160"> Bread – 160</div>
+  <div class="item"><input type="checkbox" data-name="Eggs 12" data-price="350"> Eggs (12) – 350</div>
+  <div class="item"><input type="checkbox" data-name="Rice 1kg" data-price="280"> Rice 1kg – 280</div>
+  <div class="item"><input type="checkbox" data-name="Flour 2kg" data-price="320"> Flour 2kg – 320</div>
+  <div class="item"><input type="checkbox" data-name="Spices Mix" data-price="150"> Spices – 150</div>
+  <div class="item"><input type="checkbox" data-name="Ketchup" data-price="200"> Ketchup – 200</div>
+  <div class="item"><input type="checkbox" data-name="Jam" data-price="190"> Jam – 190</div>
+  <div class="item"><input type="checkbox" data-name="Butter" data-price="280"> Butter – 280</div>
+  <div class="item"><input type="checkbox" data-name="Onion 1kg" data-price="120"> Onion 1kg – 120</div>
+  <div class="item"><input type="checkbox" data-name="Potato 1kg" data-price="100"> Potato 1kg – 100</div>
+  <div class="item"><input type="checkbox" data-name="Green Chilli" data-price="80"> Green Chilli – 80</div>
+  <div class="item"><input type="checkbox" data-name="Garlic Pack" data-price="150"> Garlic – 150</div>
+  <div class="item"><input type="checkbox" data-name="Ginger Pack" data-price="140"> Ginger – 140</div>
+  <div class="item"><input type="checkbox" data-name="Dish Sponge" data-price="70"> Dish Sponge – 70</div>
+  <div class="item"><input type="checkbox" data-name="Dish Liquid" data-price="180"> Dish Liquid – 180</div>
+</div>
+
+<h2>🚿 Bathroom Items</h2>
+
+
+
+<details>
+  <summary>🧼 Soaps (Select Brand)</summary>
+
+  <label><input type="checkbox" data-name="Lux Soap" data-price="120"> Lux – 120 PKR</label><br>
+  <label><input type="checkbox" data-name="Lifebuoy Soap" data-price="130"> Lifebuoy – 130 PKR</label><br>
+  <label><input type="checkbox" data-name="Dettol Soap" data-price="140"> Dettol – 140 PKR</label><br>
+  <label><input type="checkbox" data-name="Pears Soap" data-price="150"> Pears – 150 PKR</label><br>
+  <label><input type="checkbox" data-name="Medimix Soap" data-price="160"> Medimix – 160 PKR</label><br>
+  <label><input type="checkbox" data-name="Santoor Soap" data-price="125"> Santoor – 125 PKR</label><br>
+  <label><input type="checkbox" data-name="Camay Soap" data-price="135"> Camay – 135 PKR</label><br>
+  <label><input type="checkbox" data-name="Fiama Soap" data-price="145"> Fiama – 145 PKR</label><br>
+  <label><input type="checkbox" data-name="Godrej No.1 Soap" data-price="120"> Godrej No.1 – 120 PKR</label><br>
+  <label><input type="checkbox" data-name="Cinthol Soap" data-price="155"> Cinthol – 155 PKR</label>
+
+</details>
+
+<details>
+  <summary>🧴 Shampoo</summary>
+  <label><input type="checkbox" data-name="Head & Shoulders" data-price="450"> Head & Shoulders – 450</label><br>
+  <label><input type="checkbox" data-name="Pantene" data-price="420"> Pantene – 420</label><br>
+  <label><input type="checkbox" data-name="Sunsilk" data-price="400"> Sunsilk – 400</label><br>
+  <label><input type="checkbox" data-name="Clear" data-price="430"> Clear – 430</label><br>
+  <label><input type="checkbox" data-name="Lifebuoy" data-price="390"> Lifebuoy – 390</label><br>
+  <label><input type="checkbox" data-name="Clinic Plus" data-price="370"> Clinic Plus – 370</label><br>
+  <label><input type="checkbox" data-name="Dove" data-price="480"> Dove – 480</label><br>
+  <label><input type="checkbox" data-name="Meclay" data-price="360"> Meclay – 360</label><br>
+  <label><input type="checkbox" data-name="Vatika" data-price="410"> Vatika – 410</label><br>
+  <label><input type="checkbox" data-name="Bio Amla" data-price="350"> Bio Amla – 350</label>
+</details>
+
+
+<details>
+  <summary>🦷 Toothpaste</summary>
+  <label><input type="checkbox" data-name="Colgate Maximum Cavity Protection" data-price="250"> Colgate Maximum Cavity Protection – 250</label><br>
+  <label><input type="checkbox" data-name="Colgate Herbal" data-price="220"> Colgate Herbal – 220</label><br>
+  <label><input type="checkbox" data-name="Pepsodent Germicheck" data-price="200"> Pepsodent Germicheck – 200</label><br>
+  <label><input type="checkbox" data-name="Pepsodent Salt" data-price="180"> Pepsodent Salt – 180</label><br>
+  <label><input type="checkbox" data-name="Sensodyne Original" data-price="650"> Sensodyne Original – 650</label><br>
+  <label><input type="checkbox" data-name="Sensodyne Fresh Mint" data-price="650"> Sensodyne Fresh Mint – 650</label><br>
+  <label><input type="checkbox" data-name="Signal Complete Care" data-price="220"> Signal Complete Care – 220</label><br>
+  <label><input type="checkbox" data-name="Closeup Cool Mint" data-price="200"> Closeup Cool Mint – 200</label><br>
+  <label><input type="checkbox" data-name="Dabur Herbal" data-price="250"> Dabur Herbal – 250</label><br>
+  <label><input type="checkbox" data-name="Oral-B Pro-Expert" data-price="550"> Oral-B Pro-Expert – 550</label>
+</details>
+
+
+
+
+<details>
+  <summary>🧴 Facewash</summary>
+  <label><input type="checkbox" data-name="Garnier Men Oil Clear" data-price="400"> Garnier Men Oil Clear – 400</label><br>
+  <label><input type="checkbox" data-name="Garnier Light Complete" data-price="420"> Garnier Light Complete – 420</label><br>
+  <label><input type="checkbox" data-name="Pond's Men Energy" data-price="350"> Pond's Men Energy – 350</label><br>
+  <label><input type="checkbox" data-name="Pond's White Beauty" data-price="360"> Pond's White Beauty – 360</label><br>
+  <label><input type="checkbox" data-name="Nivea Men Oil Control" data-price="380"> Nivea Men Oil Control – 380</label><br>
+  <label><input type="checkbox" data-name="Nivea Gentle Face Wash" data-price="370"> Nivea Gentle Face Wash – 370</label><br>
+  <label><input type="checkbox" data-name="Himalaya Purifying Neem" data-price="300"> Himalaya Purifying Neem – 300</label><br>
+  <label><input type="checkbox" data-name="Himalaya Gentle Exfoliating" data-price="310"> Himalaya Gentle Exfoliating – 310</label><br>
+  <label><input type="checkbox" data-name="Olay Natural White" data-price="450"> Olay Natural White – 450</label><br>
+  <label><input type="checkbox" data-name="Clean & Clear Foaming Face Wash" data-price="390"> Clean & Clear Foaming Face Wash – 390</label>
+</details>
+
+
+<details>
+  <summary>🧴 Hand Wash</summary>
+  <label><input type="checkbox" data-name="Dettol Original Hand Wash" data-price="180"> Dettol Original Hand Wash – 180</label><br>
+  <label><input type="checkbox" data-name="Lifebuoy Total 10 Hand Wash" data-price="170"> Lifebuoy Total 10 Hand Wash – 170</label><br>
+  <label><input type="checkbox" data-name="Savlon Hand Wash" data-price="160"> Savlon Hand Wash – 160</label><br>
+  <label><input type="checkbox" data-name="Dettol Refresh Hand Wash" data-price="190"> Dettol Refresh Hand Wash – 190</label><br>
+  <label><input type="checkbox" data-name="Lifebuoy Lemon Fresh" data-price="175"> Lifebuoy Lemon Fresh – 175</label><br>
+  <label><input type="checkbox" data-name="Carex Antibacterial Hand Wash" data-price="220"> Carex Antibacterial Hand Wash – 220</label><br>
+  <label><input type="checkbox" data-name="Savlon Aloe Vera Hand Wash" data-price="180"> Savlon Aloe Vera Hand Wash – 180</label><br>
+  <label><input type="checkbox" data-name="Himalaya Herbals Hand Wash" data-price="160"> Himalaya Herbals Hand Wash – 160</label><br>
+  <label><input type="checkbox" data-name="Dettol Gentle Hand Wash" data-price="200"> Dettol Gentle Hand Wash – 200</label><br>
+  <label><input type="checkbox" data-name="Lifebuoy Cool Fresh Hand
+
+
+    <details>
+  <summary>🧻 Tissue Roll</summary>
+  <label><input type="checkbox" data-name="Soft & Cool Tissue Roll" data-price="140"> Soft & Cool Tissue Roll – 140</label><br>
+  <label><input type="checkbox" data-name="Fine Tissue Roll" data-price="150"> Fine Tissue Roll – 150</label><br>
+  <label><input type="checkbox" data-name="Breeze Tissue Roll" data-price="135"> Breeze Tissue Roll – 135</label><br>
+  <label><input type="checkbox" data-name="Charmin Ultra Soft" data-price="160"> Charmin Ultra Soft – 160</label><br>
+  <label><input type="checkbox" data-name="Comfort Tissue Roll" data-price="145"> Comfort Tissue Roll – 145</label><br>
+  <label><input type="checkbox" data-name="Softcare Tissue Roll" data-price="140"> Softcare Tissue Roll – 140</label><br>
+  <label><input type="checkbox" data-name="Greenleaf Tissue Roll" data-price="130"> Greenleaf Tissue Roll – 130</label><br>
+  <label><input type="checkbox" data-name="Velvet Tissue Roll" data-price="150"> Velvet Tissue Roll – 150</label><br>
+  <label><input type="checkbox" data-name="Rose Tissue Roll" data-price="135"> Rose Tissue Roll – 135</label><br>
+  <label><input type="checkbox" data-name="Softy Tissue Roll" data-price="140"> Softy Tissue Roll – 140</label>
+</details>
+<details>
+  <summary>🧼 Bathroom Cleaner</summary>
+  <label><input type="checkbox" data-name="Harpic Toilet Cleaner" data-price="260"> Harpic Toilet Cleaner – 260</label><br>
+  <label><input type="checkbox" data-name="Harpic Power Plus" data-price="280"> Harpic Power Plus – 280</label><br>
+  <label><input type="checkbox" data-name="Lizol Bathroom Cleaner" data-price="250"> Lizol Bathroom Cleaner – 250</label><br>
+  <label><input type="checkbox" data-name="Domex Toilet Cleaner" data-price="270"> Domex Toilet Cleaner – 270</label><br>
+  <label><input type="checkbox" data-name="Harpic Active Fresh" data-price="290"> Harpic Active Fresh – 290</label><br>
+  <label><input type="checkbox" data-name="Dettol Bathroom Cleaner" data-price="260"> Dettol Bathroom Cleaner – 260</label><br>
+  <label><input type="checkbox" data-name="Clorox Bathroom Cleaner" data-price="250"> Clorox Bathroom Cleaner – 250</label><br>
+  <label><input type="checkbox" data-name="Harpic Fresh Power" data-price="280"> Harpic Fresh Power – 280</label><br>
+  <label><input type="checkbox" data-name="Domex Lemon Fresh" data-price="260"> Domex Lemon Fresh – 260</label><br>
+  <label><input type="checkbox" data-name="Lizol Fresh Bathroom Cleaner" data-price="270"> Lizol Fresh Bathroom Cleaner – 270</label>
+</details>
+
+<details>
+  <summary>🌸 Room Freshener</summary>
+  <label><input type="checkbox" data-name="Glade Air Freshener Spray" data-price="260"> Glade Air Freshener Spray – 260</label><br>
+  <label><input type="checkbox" data-name="Ambi Pur Car & Room Freshener" data-price="280"> Ambi Pur Car & Room Freshener – 280</label><br>
+  <label><input type="checkbox" data-name="Rexona Room Freshener" data-price="250"> Rexona Room Freshener – 250</label><br>
+  <label><input type="checkbox" data-name="Air Wick Freshmatic" data-price="290"> Air Wick Freshmatic – 290</label><br>
+  <label><input type="checkbox" data-name="Ambi Pur Fresh Linen" data-price="270"> Ambi Pur Fresh Linen – 270</label><br>
+  <label><input type="checkbox" data-name="Glade Lavender Freshener" data-price="260"> Glade Lavender Freshener – 260</label><br>
+  <label><input type="checkbox" data-name="Rexona Floral Freshener" data-price="250"> Rexona Floral Freshener – 250</label><br>
+  <label><input type="checkbox" data-name="Air Wick Vanilla Breeze" data-price="280"> Air Wick Vanilla Breeze – 280</label><br>
+  <label><input type="checkbox" data-name="Glade Citrus Freshener" data-price="260"> Glade Citrus Freshener – 260</label><br>
+  <label><input type="checkbox" data-name="Ambi Pur Ocean Fresh" data-price="270"> Ambi Pur Ocean Fresh – 270</label>
+</details>
+
+
+<details>
+  <summary>💆 Hair Oil</summary>
+  <label><input type="checkbox" data-name="Parachute Coconut Hair Oil" data-price="200"> Parachute Coconut Hair Oil – 200</label><br>
+  <label><input type="checkbox" data-name="Sesa Hair Oil" data-price="250"> Sesa Hair Oil – 250</label><br>
+  <label><input type="checkbox" data-name="Dabur Amla Hair Oil" data-price="220"> Dabur Amla Hair Oil – 220</label><br>
+  <label><input type="checkbox" data-name="Vatika Hair Oil" data-price="210"> Vatika Hair Oil – 210</label><br>
+  <label><input type="checkbox" data-name="Hemani Herbal Hair Oil" data-price="230"> Hemani Herbal Hair Oil – 230</label><br>
+  <label><input type="checkbox" data-name="Olive Hair Oil" data-price="240"> Olive Hair Oil – 240</label><br>
+  <label><input type="checkbox" data-name="Indulekha Bringha Hair Oil" data-price="400"> Indulekha Bringha Hair Oil – 400</label><br>
+  <label><input type="checkbox" data-name="Parachute Advansed Hair Oil" data-price="250"> Parachute Advansed Hair Oil – 250</label><br>
+  <label><input type="checkbox" data-name="Pond's Hair Oil" data-price="200"> Pond's Hair Oil – 200</label><br>
+  <label><input type="checkbox" data-name="Sunsilk Hair Oil" data-price="220"> Sunsilk Hair Oil – 220</label>
+</details>
+
+<details>
+  <summary>🧴 Body Lotion</summary>
+  <label><input type="checkbox" data-name="Nivea Body Lotion" data-price="350"> Nivea Body Lotion – 350</label><br>
+  <label><input type="checkbox" data-name="Vaseline Body Lotion" data-price="340"> Vaseline Body Lotion – 340</label><br>
+  <label><input type="checkbox" data-name="Pond's Body Lotion" data-price="330"> Pond's Body Lotion – 330</label><br>
+  <label><input type="checkbox" data-name="Himalaya Body Lotion" data-price="320"> Himalaya Body Lotion – 320</label><br>
+  <label><input type="checkbox" data-name="Dove Body Lotion" data-price="360"> Dove Body Lotion – 360</label><br>
+  <label><input type="checkbox" data-name="Johnson's Body Lotion" data-price="350"> Johnson's Body Lotion – 350</label><br>
+  <label><input type="checkbox" data-name="Oriflame Body Lotion" data-price="370"> Oriflame Body Lotion – 370</label><br>
+  <label><input type="checkbox" data-name="Biotique Body Lotion" data-price="340"> Biotique Body Lotion – 340</label><br>
+  <label><input type="checkbox" data-name="Pears Body Lotion" data-price="330"> Pears Body Lotion – 330</label><br>
+  <label><input type="checkbox" data-name="Garnier Body Lotion" data-price="360"> Garnier Body Lotion – 360</label>
+</details>
+
+
+
+
+
+
+
+
+ 
+<div class="item"><input type="checkbox" data-name="Dettol" data-price="250"> Dettol – 250</div>
+  <div class="item"><input type="checkbox" data-name="Sanitary Pads" data-price="300"> Sanitary Pads – 300</div>
+  <div class="item"><input type="checkbox" data-name="Razor" data-price="120"> Razor – 120</div>
+  <div class="item"><input type="checkbox" data-name="Shaving Foam" data-price="220"> Shaving Foam – 220</div>
+  
+  <div class="item"><input type="checkbox" data-name="Comb" data-price="80"> Comb – 80</div>
+  <div class="item"><input type="checkbox" data-name="Nail Cutter" data-price="100"> Nail Cutter – 100</div>
+  <div class="item"><input type="checkbox" data-name="Cotton Pack" data-price="90"> Cotton – 90</div>
+  <div class="item"><input type="checkbox" data-name="Ear Buds" data-price="70"> Ear Buds – 70</div>
+  <div class="item"><input type="checkbox" data-name="Bath Sponge" data-price="120"> Bath Sponge – 120</div>
+</div>
+
+  <div class="item"><input type="checkbox" data-name="Toothbrush" data-price="120"> Toothbrush – 120</div>
+
+<!-- Summary -->
+<div class="box">
+  <p id="total">Total: 0 PKR</p>
+  <p id="advance">Advance (50%): 0 PKR</p>
+
+
+
+
+
+<div class="box">
+  <p id="total">Total Items Price: 0 PKR</p>
+  <p id="delivery">Delivery Distance: 12 km</p>
+  <p id="charges">Delivery Charges: 0 PKR</p>
+  <p id="advance">Advance (50%): 0 PKR</p>
+
+  <label>
+    <input type="checkbox" id="agree">
+    I agree to pay<br>
+
+    <label>1:</label><br> 50% advance (Refundable)<br>
+    <label>2:</label>
+    Delivery charges Rs: 25KM * PKR per KM  (non-refundable if cancelled)
+  </label>
+
+  <button id="orderBtn" disabled>Order on WhatsApp</button>
+</div>
+
+<script src="script.js"></script>
+
+
+
+</body>
+</html>
