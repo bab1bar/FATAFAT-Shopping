@@ -73,3 +73,65 @@ function getCustomerRemarks() {
   console.log("Customer remarks:", comment);
   // you can send this value to your backend or include in order summary
 }
+
+
+function sendWhatsApp() {
+  const checkedItems = document.querySelectorAll(
+    'details input[type="checkbox"]:checked'
+  );
+
+  if (checkedItems.length === 0) {
+    alert("براہِ کرم کم از کم ایک چیز منتخب کریں");
+    return;
+  }
+
+  let message = "السلام علیکم، میں درج ذیل سبزیاں آرڈر کرنا چاہتا ہوں:\n\n";
+
+  checkedItems.forEach((item, index) => {
+    message += (index + 1) + ". " + item.value + "\n";
+  });
+
+  message += "\nبراہِ کرم قیمت اور دستیابی کنفرم کر دیں۔";
+
+  const phoneNumber = "923001234567"; 
+  // ↑ اپنا WhatsApp نمبر یہاں ڈالیں (92 کے ساتھ)
+
+  const whatsappURL =
+    "https://wa.me/" +
+    phoneNumber +
+    "?text=" +
+    encodeURIComponent(message);
+
+  window.open(whatsappURL, "_blank");
+}
+
+
+function sendWhatsAppFruits() {
+  const checkedItems = document.querySelectorAll(
+    'details input[type="checkbox"]:checked'
+  );
+
+  if (checkedItems.length === 0) {
+    alert("براہِ کرم کم از کم ایک پھل منتخب کریں");
+    return;
+  }
+
+  let message = "السلام علیکم، میں درج ذیل پھل آرڈر کرنا چاہتا ہوں:\n\n";
+
+  checkedItems.forEach((item, index) => {
+    message += (index + 1) + ". " + item.value + "\n";
+  });
+
+  message += "\nبراہِ کرم قیمت اور دستیابی کنفرم کر دیں۔";
+
+  const phoneNumber = "923001234567"; 
+  // ↑ اپنا WhatsApp نمبر یہاں ڈالیں (92 کے ساتھ)
+
+  const whatsappURL =
+    "https://wa.me/" +
+    phoneNumber +
+    "?text=" +
+    encodeURIComponent(message);
+
+  window.open(whatsappURL, "_blank");
+}
