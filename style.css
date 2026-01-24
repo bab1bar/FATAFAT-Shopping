@@ -1,19 +1,76 @@
+
+body {
+    font-family: 'Noto Nastaliq Urdu', serif; /* applies to all text */
+    direction: auto; /* makes Urdu read right-to-left */
+    line-height: 1.6; /* improves readability */
+    text-align: auto; /* aligns all text to the right */
+}
+
+
+
+
+
+
+
+
+
+
+/* 
 body {
   font-family: Arial, sans-serif;
   background: #f5f5f5;
   padding: 20px;
-}
+} */
+ /* body {
+  background: red;
+ } */
 #logo{
     background-color: blue;
     color: gold;
     font-size: 40px;
     border-radius: 40%;
-
+}
 
 .slogan{
-  background-color: rgb(5, 100, 100);
-color: brown;
+  font-size: 20px;
+  background-color: rgb(106, 128, 99);
+color: rgb(7, 7, 131);
+text-align: center;
+border-radius: 10px;
 }
+
+.slogan::before{
+  content: "✨";
+  margin-right: 5px;
+}
+.slogan::after{
+  content: "✨";
+  margin-left: 5px;
+  font-weight: 600;
+}
+.slogan:hover{
+  color: black;
+  background-color: blue;
+}
+#para {
+  text-align: center;
+  color: rgb(248, 219, 52);
+  background-color: rgb(72, 73, 151);
+}
+/* <br><p id="para">
+ہم اپنے صارفین کو تیز، آسان اور قابلِ اعتماد سروس فراہم کرتے ہیں۔
+ آپ کا آرڈر کم سے کم وقت میں، پوری ذمہ داری کے ساتھ 
+ آپ تک پہنچایا جاتا ہے کیونکہ آپ کا اعتماد ہماری اولین ترجیح ہے۔
+</p>
+ */
+
+
+
+
+
+
+
+
 h1 {
   text-align: center;
 }
@@ -53,23 +110,6 @@ button:disabled {
 }
 
 
-<div class="items" id="groceryItems">
-  <ul>
-    <li>Rice</li>
-    <li>Flour</li>
-    <li>Sugar</li>
-  </ul>
-</div>
-
-<div class="items" id="bakeryItems">
-  <ul>
-    <li>Biscuit</li>
-    <li>Cake</li>
-    <li>Bread</li>
-    <li>Pastry</li>
-  </ul>
-</div>
-
 <!-- Repeat for other categories as needed -->
 
 
@@ -103,11 +143,11 @@ button:disabled {
   display: block;
 }
 
-/* Filtered items */
+/* Filtered items
 .items {
   display: none;
   margin-top: 20px;
-}
+} */
 
 
 .customer-comments {
@@ -303,10 +343,6 @@ details label:hover {
   background-color: #f1f8f4;
 }
 
-#para{
-  color: purple;
-  background-color: lavender;
-}
 
 /* Checkbox style */
 details input[type="checkbox"] {
@@ -324,10 +360,10 @@ details label::before {
   margin-left: -15px;
 }
 
-#para {
+/* #para {
   color: purple;
   background-color: rgb(59, 9, 241);
-}
+} */
 
 #note {
   color: red;
@@ -335,3 +371,16 @@ details label::before {
   margin-top: 15px;
   background-color: yellow;
 }
+
+
+
+
+/* 
+<nav class="navbar">
+  <a href="#kitchen">🍳 Kitchen</a>
+  <a href="#bathroom">🚿 Bathroom</a>
+  <a href="#medical">💊 Medical</a>
+  <a href="#cosmetics">💄 Cosmetics</a>
+  <a href="#vegetables">🥬 Vegetables</a>
+  <a href="#fruits">🍎 Fruits</a>
+</nav> */
