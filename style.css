@@ -10,7 +10,9 @@ body {
     border-radius: 40%;
 
 
-
+.slogan{
+  background-color: rgb(5, 100, 100);
+color: brown;
 }
 h1 {
   text-align: center;
@@ -121,5 +123,215 @@ button:disabled {
   resize: vertical; /* allow vertical resizing */
 }
 
+#ins{
+  background-color: lightgreen;
+}
 
 
+/* Details container */
+details {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 15px 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* Summary heading */
+summary {
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #2c3e50;
+  list-style: none;
+}
+
+/* Remove default arrow (optional) */
+summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Checkbox label */
+details label {
+  display: flex;
+  align-items: center;
+  padding: 8px 6px;
+  margin: 4px 0;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-size: 15px;
+}
+
+/* Hover effect */
+details label:hover {
+  background: #f1f8f4;
+}
+
+/* Checkbox style */
+details input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.2);
+  accent-color: #2ecc71;
+}
+
+/* Selected item highlight */
+details input[type="checkbox"]:checked + span {
+  font-weight: bold;
+  color: #27ae60;
+}
+
+/* WhatsApp button */
+button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 14px;
+  font-size: 18px;
+  background: #25D366;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1ebe5d;
+}
+
+
+/* Details container */
+details {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 15px 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* Summary heading */
+summary {
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #c0392b; /* fruits color redish */
+  list-style: none;
+}
+
+/* Remove default arrow (optional) */
+summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Checkbox label */
+details label {
+  display: flex;
+  align-items: center;
+  padding: 8px 6px;
+  margin: 4px 0;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-size: 15px;
+}
+
+/* Hover effect */
+details label:hover {
+  background: #fff5f5;
+}
+
+/* Checkbox style */
+details input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.2);
+  accent-color: #e74c3c;
+}
+
+/* Selected item highlight */
+details input[type="checkbox"]:checked + span {
+  font-weight: bold;
+  color: #c0392b;
+}
+
+/* WhatsApp button */
+button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 14px;
+  font-size: 18px;
+  background: #25D366;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1ebe5d;
+}
+
+/* Details container */
+details {
+  padding: 15px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  margin: 15px 0;
+}
+
+/* Summary heading */
+details summary {
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 10px;
+  display: list-item; /* ensures summary is separate */
+  color: #27ae60; /* green for vegetables */
+}
+
+/* Make labels block with spacing */
+details label {
+  display: block; /* each label on new line */
+  margin: 6px 0;
+  padding: 5px 8px;
+  border-radius: 5px;
+  transition: background 0.2s;
+  cursor: pointer;
+}
+
+/* Hover effect */
+details label:hover {
+  background-color: #f1f8f4;
+}
+
+#para{
+  color: purple;
+  background-color: lavender;
+}
+
+/* Checkbox style */
+details input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.2);
+  accent-color: #2ecc71;
+}
+
+/* Optional: add bullet points using pseudo-element */
+details label::before {
+  content: "•";
+  color: #2ecc71;
+  display: inline-block;
+  width: 15px;
+  margin-left: -15px;
+}
+
+#para {
+  color: purple;
+  background-color: rgb(59, 9, 241);
+}
+
+#note {
+  color: red;
+  font-weight: bold;
+  margin-top: 15px;
+  background-color: yellow;
+}
