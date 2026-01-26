@@ -4,6 +4,7 @@ body {
     direction: auto; /* makes Urdu read right-to-left */
     line-height: 1.6; /* improves readability */
     text-align: auto; /* aligns all text to the right */
+     <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet"> -->
 }
 
 
@@ -24,6 +25,188 @@ body {
  /* body {
   background: red;
  } */
+
+
+/* Reset & base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Main heading container */
+h1 {
+  position: sticky;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #ffffff;
+  padding: 25px 20px;
+  text-align: center;
+  border-radius: 12px;
+  max-width: 1100px;
+  margin: 3px auto;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  line-height: 1.4;
+}
+
+/* Navbar */
+
+/* 
+.navbar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+/* Navbar links */
+.navbar a {
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  padding: 10px 18px;
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+/* Hover effect */
+.navbar a:hover {
+  background: #ffffff;
+  color: #203a43;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+}
+
+/* Delivery text */
+h1 br + text,
+h1 {
+  font-size: 26px;
+}
+ */
+/* Small text styling inside h1 */
+h1 {
+  font-weight: 600;
+}
+
+
+
+
+
+
+
+
+/* Responsive */
+/* @media (max-width: 600px) {
+  h1 {
+    font-size: 20px;
+    padding: 20px 15px;
+  }
+
+  .navbar a {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+} */
+
+
+
+
+
+/* =========================
+   PREMIUM STICKY NAVBAR
+========================= */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+
+  padding: 12px 14px;
+  margin-bottom: 18px;
+
+  background: rgba(47, 57, 61, 0.92);
+  backdrop-filter: blur(10px);
+
+  border-radius: 14px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
+}
+
+/* =========================
+   NAV LINKS
+========================= */
+.navbar a {
+  text-decoration: none;
+  color: #e1f764;
+
+  font-size: 15px;
+  font-weight: 500;
+
+  padding: 10px 20px;
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+/* Hover animation */
+.navbar a:hover {
+  background: #8f7575;
+  color: #e3ebee;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35);
+}
+
+/* Click feedback */
+.navbar a:active {
+  transform: translateY(-2px) scale(0.97);
+  background-color: #1ebe5d;
+}
+
+/* Keyboard focus (accessibility) */
+.navbar a:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.45);
+}
+
+/* =========================
+   RESPONSIVE TUNING
+========================= */
+@media (max-width: 768px) {
+  .navbar {
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .navbar a {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar a {
+    font-size: 13px;
+    padding: 7px 14px;
+  }
+}
+
+
+
+
+
+
+
 #logo{
     background-color: blue;
     color: gold;
