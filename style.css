@@ -1,43 +1,26 @@
-
-body {
-    font-family: 'Noto Nastaliq Urdu', serif; /* applies to all text */
-    direction: auto; /* makes Urdu read right-to-left */
-    line-height: 1.6; /* improves readability */
-    text-align: auto; /* aligns all text to the right */
-     <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet"> -->
-}
-
-
-
-
-
-
-
-
-
-
-/* 
-body {
-  font-family: Arial, sans-serif;
-  background: #f5f5f5;
-  padding: 20px;
-} */
- /* body {
-  background: red;
- } */
-
-
-/* Reset & base */
+/* =========================
+   RESET & BASE STYLES
+========================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Main heading container */
+body {
+  font-family: 'Noto Nastaliq Urdu', serif; /* Urdu font */
+  direction: rtl; /* Right-to-left text */
+  text-align: right;
+  line-height: 1.6;
+  background-color: #db9292; /* optional, keep your design */
+}
+
+/* =========================
+   MAIN HEADING
+========================= */
 h1 {
   position: sticky;
+  top: 0;
   background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
   color: #ffffff;
   padding: 25px 20px;
@@ -45,149 +28,56 @@ h1 {
   border-radius: 12px;
   max-width: 1100px;
   margin: 3px auto;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 10px 25px rgba(145, 82, 82, 0.25);
   line-height: 1.4;
-}
-
-/* Navbar */
-
-/* 
-.navbar {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 14px;
-  margin-bottom: 18px;
-}
-
-/* Navbar links */
-.navbar a {
-  text-decoration: none;
-  background: rgba(255, 255, 255, 0.12);
-  color: #ffffff;
-  padding: 10px 18px;
-  border-radius: 25px;
-  font-size: 15px;
-  font-weight: 500;
-  transition: all 0.3s ease;
-  border: 1px solid rgba(255, 255, 255, 0.25);
-}
-
-/* Hover effect */
-.navbar a:hover {
-  background: #ffffff;
-  color: #203a43;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
-}
-
-/* Delivery text */
-h1 br + text,
-h1 {
-  font-size: 26px;
-}
- */
-/* Small text styling inside h1 */
-h1 {
   font-weight: 600;
 }
 
-
-
-
-
-
-
-
-/* Responsive */
-/* @media (max-width: 600px) {
-  h1 {
-    font-size: 20px;
-    padding: 20px 15px;
-  }
-
-  .navbar a {
-    font-size: 14px;
-    padding: 8px 14px;
-  }
-} */
-
-
-
-
-
 /* =========================
-   PREMIUM STICKY NAVBAR
+   STICKY NAVBAR
 ========================= */
+
 .navbar {
+  display: flex;
+  justify-content: space-between; /* logo left, links right */
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+  background: rgba(10, 184, 253, 0.92);
+  backdrop-filter: blur(10px);
+  border-radius: 14px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
   position: sticky;
   top: 0;
   z-index: 999;
-
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 14px;
-
-  padding: 12px 14px;
-  margin-bottom: 18px;
-
-  background: rgba(47, 57, 61, 0.92);
-  backdrop-filter: blur(10px);
-
-  border-radius: 14px;
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
 }
 
-/* =========================
-   NAV LINKS
-========================= */
-.navbar a {
-  text-decoration: none;
-  color: #e1f764;
 
+.nav-links {
+  display: flex;
+  gap: 10px; /* space between links */
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #78fc2c;
   font-size: 15px;
   font-weight: 500;
-
-  padding: 10px 20px;
+  padding: 8px 16px;
   border-radius: 999px;
-
-  background: rgba(255, 255, 255, 0.12);
+  background: rgba(4, 67, 241, 0.555);
   border: 1px solid rgba(255, 255, 255, 0.25);
-
   transition: all 0.3s ease;
-  white-space: nowrap;
 }
-
-/* Hover animation */
-.navbar a:hover {
-  background: #8f7575;
-  color: #e3ebee;
-  transform: translateY(-3px);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35);
-}
-
-/* Click feedback */
-.navbar a:active {
-  transform: translateY(-2px) scale(0.97);
-  background-color: #1ebe5d;
-}
-
-/* Keyboard focus (accessibility) */
-.navbar a:focus {
-  outline: none;
-  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.45);
-}
-
 /* =========================
-   RESPONSIVE TUNING
+   RESPONSIVE NAVBAR
 ========================= */
 @media (max-width: 768px) {
   .navbar {
-    gap: 10px;
-    padding: 10px;
+    gap: 6px;
+    padding: 6px;
   }
-
   .navbar a {
     font-size: 14px;
     padding: 8px 16px;
@@ -200,62 +90,109 @@ h1 {
     padding: 7px 14px;
   }
 }
+ /* =========================
+   LOGO
+========================= */
+/* #logo {
+  background-color: rgb(50, 50, 160);
+  color: gold;
+  font-size: 40px;
+  border-radius: 40%;
+} */
 
 
-
-
-
-
-
-#logo{
-    background-color: blue;
-    color: gold;
-    font-size: 40px;
-    border-radius: 40%;
+#logo {
+  font-size: 30px;
+  color: gold;
+  background-color: rgb(1, 1, 22);
+  border-radius: 40%;
+  padding: 2px 2px; /* optional spacing */
+  text-align: center;
 }
 
-.slogan{
+
+.lago {
+  text-align: center;
+  margin-bottom: -20px;
+  margin-left: 1px;
+} */
+
+/* =========================
+   SLOGAN
+========================= */
+.slogan {
   font-size: 20px;
   background-color: rgb(106, 128, 99);
-color: rgb(7, 7, 131);
-text-align: center;
-border-radius: 10px;
+  color: rgb(7, 7, 131);
+  text-align: center;
+  border-radius: 10px;
 }
 
-.slogan::before{
+.slogan::before {
   content: "✨";
   margin-right: 5px;
 }
-.slogan::after{
+
+.slogan::after {
   content: "✨";
   margin-left: 5px;
   font-weight: 600;
 }
-.slogan:hover{
+
+.slogan:hover {
   color: black;
-  background-color: blue;
+  background-color: rgb(68, 68, 226);
 }
+
+/* =========================
+   PARAGRAPHS
+========================= */
 #para {
   text-align: center;
   color: rgb(248, 219, 52);
   background-color: rgb(72, 73, 151);
 }
-/* <br><p id="para">
-ہم اپنے صارفین کو تیز، آسان اور قابلِ اعتماد سروس فراہم کرتے ہیں۔
- آپ کا آرڈر کم سے کم وقت میں، پوری ذمہ داری کے ساتھ 
- آپ تک پہنچایا جاتا ہے کیونکہ آپ کا اعتماد ہماری اولین ترجیح ہے۔
-</p>
- */
 
+/* =========================
+   DROPDOWNS
+========================= */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+}
 
+.dropbtn {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
 
+.dropbtn:hover {
+  background-color: #2980b9;
+}
 
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 300px;
+  border: 1px solid #ccc;
+  z-index: 1;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
 
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
-
-
-h1 {
-  text-align: center;
+.category {
+  margin-top: 10px;
 }
 
 .items {
@@ -264,27 +201,27 @@ h1 {
   gap: 10px;
 }
 
-.item {
+.item, .box {
   background: white;
   padding: 10px;
   border-radius: 6px;
 }
 
-.box {
-  background: white;
-  padding: 15px;
-  margin: 20px 0;
-  border-radius: 8px;
-}
-
 button {
-  padding: 12px;
   width: 100%;
-  background: green;
+  margin-top: 20px;
+  padding: 14px;
+  font-size: 18px;
+  background: #25D366;
   color: white;
   border: none;
-  font-size: 16px;
+  border-radius: 10px;
   cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: #1ebe5d;
 }
 
 button:disabled {
@@ -292,11 +229,93 @@ button:disabled {
   cursor: not-allowed;
 }
 
+/* =========================
+   DETAILS & CHECKBOXES
+========================= */
+details {
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 15px 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
 
-<!-- Repeat for other categories as needed -->
+summary {
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  list-style: none;
+  margin-bottom: 10px;
+}
 
+summary::-webkit-details-marker {
+  display: none;
+}
 
-/* Hover popup for select */
+details label {
+  display: block;
+  margin: 6px 0;
+  padding: 5px 8px;
+  border-radius: 5px;
+  transition: background 0.2s;
+  cursor: pointer;
+}
+
+details label:hover {
+  background-color: #f1f8f4;
+}
+
+details input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.2);
+  accent-color: #2ecc71;
+}
+
+details input[type="checkbox"]:checked + span {
+  font-weight: bold;
+  color: #27ae60;
+}
+
+details label::before {
+  content: "•";
+  color: #2ecc71;
+  display: inline-block;
+  width: 15px;
+  margin-left: -15px;
+}
+
+/* =========================
+   NOTES & HIGHLIGHTS
+========================= */
+#note {
+  color: red;
+  font-weight: bold;
+  margin-top: 15px;
+  background-color: yellow;
+}
+
+.highlight1 {
+  background-color: rgb(231, 154, 39);
+  font-weight: bold;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+/* =========================
+   CUSTOMER COMMENTS
+========================= */
+.customer-comments textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+/* =========================
+   HOVER POPUPS
+========================= */
 .hoverable {
   position: relative;
 }
@@ -326,244 +345,38 @@ button:disabled {
   display: block;
 }
 
-/* Filtered items
-.items {
-  display: none;
-  margin-top: 20px;
-} */
-
-
-.customer-comments {
-  margin-top: 20px;
+.box{
+  background-color: #4f7279;
 }
 
-.customer-comments textarea {
-  width: 100%; /* full width */
+
+.all-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  gap: 20px; /* space between category columns */
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+
+.phone-box {
+  margin: 15px 0;
+}
+
+.phone-box input {
+  width: 100%;
   padding: 10px;
   font-size: 16px;
+  border-radius: 6px;
   border: 1px solid #ccc;
-  border-radius: 5px;
-  resize: vertical; /* allow vertical resizing */
+  margin-top: 6px;
 }
 
-#ins{
-  background-color: lightgreen;
+.phone-box input:focus {
+  outline: none;
+  border-color: #25D366; /* WhatsApp green */
 }
-
-
-/* Details container */
-details {
-  background: #ffffff;
-  border-radius: 10px;
-  padding: 15px;
-  margin: 15px 0;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-}
-
-/* Summary heading */
-summary {
-  font-size: 18px;
-  font-weight: bold;
-  cursor: pointer;
-  color: #2c3e50;
-  list-style: none;
-}
-
-/* Remove default arrow (optional) */
-summary::-webkit-details-marker {
-  display: none;
-}
-
-/* Checkbox label */
-details label {
-  display: flex;
-  align-items: center;
-  padding: 8px 6px;
-  margin: 4px 0;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background 0.2s;
-  font-size: 15px;
-}
-
-/* Hover effect */
-details label:hover {
-  background: #f1f8f4;
-}
-
-/* Checkbox style */
-details input[type="checkbox"] {
-  margin-right: 10px;
-  transform: scale(1.2);
-  accent-color: #2ecc71;
-}
-
-/* Selected item highlight */
-details input[type="checkbox"]:checked + span {
-  font-weight: bold;
-  color: #27ae60;
-}
-
-/* WhatsApp button */
-button {
-  width: 100%;
-  margin-top: 20px;
-  padding: 14px;
-  font-size: 18px;
-  background: #25D366;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-button:hover {
-  background: #1ebe5d;
-}
-
-
-/* Details container */
-details {
-  background: #ffffff;
-  border-radius: 10px;
-  padding: 15px;
-  margin: 15px 0;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-}
-
-/* Summary heading */
-summary {
-  font-size: 18px;
-  font-weight: bold;
-  cursor: pointer;
-  color: #c0392b; /* fruits color redish */
-  list-style: none;
-}
-
-/* Remove default arrow (optional) */
-summary::-webkit-details-marker {
-  display: none;
-}
-
-/* Checkbox label */
-details label {
-  display: flex;
-  align-items: center;
-  padding: 8px 6px;
-  margin: 4px 0;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background 0.2s;
-  font-size: 15px;
-}
-
-/* Hover effect */
-details label:hover {
-  background: #fff5f5;
-}
-
-/* Checkbox style */
-details input[type="checkbox"] {
-  margin-right: 10px;
-  transform: scale(1.2);
-  accent-color: #e74c3c;
-}
-
-/* Selected item highlight */
-details input[type="checkbox"]:checked + span {
-  font-weight: bold;
-  color: #c0392b;
-}
-
-/* WhatsApp button */
-button {
-  width: 100%;
-  margin-top: 20px;
-  padding: 14px;
-  font-size: 18px;
-  background: #25D366;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-button:hover {
-  background: #1ebe5d;
-}
-
-/* Details container */
-details {
-  padding: 15px;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-  margin: 15px 0;
-}
-
-/* Summary heading */
-details summary {
-  font-size: 18px;
-  font-weight: bold;
-  cursor: pointer;
-  margin-bottom: 10px;
-  display: list-item; /* ensures summary is separate */
-  color: #27ae60; /* green for vegetables */
-}
-
-/* Make labels block with spacing */
-details label {
-  display: block; /* each label on new line */
-  margin: 6px 0;
-  padding: 5px 8px;
-  border-radius: 5px;
-  transition: background 0.2s;
-  cursor: pointer;
-}
-
-/* Hover effect */
-details label:hover {
-  background-color: #f1f8f4;
-}
-
-
-/* Checkbox style */
-details input[type="checkbox"] {
-  margin-right: 10px;
-  transform: scale(1.2);
-  accent-color: #2ecc71;
-}
-
-/* Optional: add bullet points using pseudo-element */
-details label::before {
-  content: "•";
-  color: #2ecc71;
-  display: inline-block;
-  width: 15px;
-  margin-left: -15px;
-}
-
-/* #para {
-  color: purple;
-  background-color: rgb(59, 9, 241);
-} */
-
-#note {
-  color: red;
-  font-weight: bold;
-  margin-top: 15px;
-  background-color: yellow;
-}
-
-
-
-
-/* 
-<nav class="navbar">
-  <a href="#kitchen">🍳 Kitchen</a>
-  <a href="#bathroom">🚿 Bathroom</a>
-  <a href="#medical">💊 Medical</a>
-  <a href="#cosmetics">💄 Cosmetics</a>
-  <a href="#vegetables">🥬 Vegetables</a>
-  <a href="#fruits">🍎 Fruits</a>
-</nav> */

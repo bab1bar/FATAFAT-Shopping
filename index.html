@@ -33,12 +33,13 @@
 
 
 <nav class="navbar">
+  <div class="lago">
   <logo id="logo">
   
   
   فٹافٹ
 </logo>
-
+</div>
 
 
    <a href="#Kitchen">🍳 Kitchen<br>باورچی خانہ</a>
@@ -75,17 +76,35 @@
 
     </span>
     
-    <br><p id="para">
-ہم اپنے صارفین کو تیز، آسان اور قابلِ اعتماد سروس فراہم کرتے ہیں۔
+    <br>
+    
+    
+<!-- Section to show clicked category items -->
+<div id="display-items"></div>
+<p id="para">
+ہم اپنے صارفین کو تیز، آسان اور قابلِ 
+
+
+اعتماد سروس فراہم کرتے ہیں۔
 
  آپ کا آرڈر کم سے کم وقت میں، پوری ذمہ داری کے ساتھ 
  
  
- آپ تک پہنچایا جاتا ہے کیونکہ آپ کا اعتماد ہماری کامیابی
+ آپ تک پہنچایا جاتا ہے کیونکہ آپ کا 
+ <span class="highlight1">
+ اعتماد
+ </span>
+ 
+ ہماری
+ <span class="highlight1">
+ کامیابی
  
  ہے۔
+ </span>
 </p>
 <!-- Pickup Store -->
+
+<div class="all-items">
 <div class="box">
 
 <h3>Pickup Category</h3>
@@ -139,7 +158,7 @@
 
 <details>
   <summary>🛢️ Cooking Oil (Select Brand)</summary>
-
+<br>
   <label><input type="checkbox" data-name="Canola Oil 1L" data-price="680"> Canola – 680 PKR</label><br>
   <label><input type="checkbox" data-name="Dalda Cooking Oil 1L" data-price="650"> Dalda – 650 PKR</label><br>
   <label><input type="checkbox" data-name="Eva Oil 1L" data-price="600"> Eva – 600 PKR</label><br>
@@ -178,6 +197,73 @@
   <div class="item"><input type="checkbox" data-name="Dish Sponge" data-price="70"> Dish Sponge – 70</div>
   <div class="item"><input type="checkbox" data-name="Dish Liquid" data-price="180"> Dish Liquid – 180</div>
 </div>
+
+
+<div class="dropdown">
+  <button class="dropbtn">Kitchen Items</button>
+  <div class="dropdown-content">
+    <label><input type="checkbox" id="selectAll"> Select All</label>
+
+    <div class="category">
+      <label><input type="checkbox" class="group-checkbox"> Crockery (برتن)</label>
+      <div class="items">
+        <label><input type="checkbox" class="item-checkbox"> Pots (دیگچی)</label>
+        <label><input type="checkbox" class="item-checkbox"> Pans (کڑاہی)</label>
+        <label><input type="checkbox" class="item-checkbox"> Pressure Cookers (پریشر ککر)</label>
+        <label><input type="checkbox" class="item-checkbox"> Baking Dishes (بیکنگ ڈش)</label>
+      </div>
+    </div>
+
+    <div class="category">
+      <label><input type="checkbox" class="group-checkbox"> Cutlery / Utensils (چمچ، کانٹے، چاقو)</label>
+      <div class="items">
+        <label><input type="checkbox" class="item-checkbox"> Spoons (چمچ)</label>
+        <label><input type="checkbox" class="item-checkbox"> Forks (کانٹے)</label>
+        <label><input type="checkbox" class="item-checkbox"> Knives (چاقو)</label>
+        <label><input type="checkbox" class="item-checkbox"> Ladles (کڑچھیاں)</label>
+        <label><input type="checkbox" class="item-checkbox"> Tongs (چمٹیاں)</label>
+      </div>
+    </div>
+
+    <div class="category">
+      <label><input type="checkbox" class="group-checkbox"> Cookware / Kitchen Tools (کھانا پکانے کے اوزار)</label>
+      <div class="items">
+        <label><input type="checkbox" class="item-checkbox"> Rolling Pins (بیلنا)</label>
+        <label><input type="checkbox" class="item-checkbox"> Whisks (چھلاڑی)</label>
+        <label><input type="checkbox" class="item-checkbox"> Graters (کشید کنندہ)</label>
+        <label><input type="checkbox" class="item-checkbox"> Peelers (چھلکنے والا)</label>
+        <label><input type="checkbox" class="item-checkbox"> Sieves (چھاننی)</label>
+      </div>
+    </div>
+
+    <div class="category">
+      <label><input type="checkbox" class="group-checkbox"> Spices & Condiments (مصالحہ جات اور ذائقہ دار اشیاء)</label>
+      <div class="items">
+        <label><input type="checkbox" class="item-checkbox"> Salt (نمک)</label>
+        <label><input type="checkbox" class="item-checkbox"> Sugar (چینی)</label>
+        <label><input type="checkbox" class="item-checkbox"> Pepper (کالی مرچ)</label>
+        <label><input type="checkbox" class="item-checkbox"> Turmeric (ہلدی)</label>
+        <label><input type="checkbox" class="item-checkbox"> Oils (تیل)</label>
+      </div>
+    </div>
+
+    <div class="category">
+      <label><input type="checkbox" class="group-checkbox"> Appliances / Electrical (بجلی والے اوزار)</label>
+      <div class="items">
+        <label><input type="checkbox" class="item-checkbox"> Mixer (مکسچر)</label>
+        <label><input type="checkbox" class="item-checkbox"> Blender (بلینڈر)</label>
+        <label><input type="checkbox" class="item-checkbox"> Microwave (مائیکروویو)</label>
+        <label><input type="checkbox" class="item-checkbox"> Toaster (ٹوسٹر)</label>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
 
 <h2>🚿 Bathroom Items</h2>
 
@@ -484,102 +570,65 @@
 </div>
 
   <div class="item"><input type="checkbox" data-name="Toothbrush" data-price="120"> Toothbrush – 120</div>
-
+</div>
 <!-- Summary -->
 <div class="box">
-  <p id="total">Total: 0 PKR</p>
-  <p id="advance">Advance (100%): 0 PKR</p>
 
-
-
-
-
-<div class="box">
-  <p id="total">Total Items Price: 0 PKR</p>
+  <p id="totalPrice">Total Items Price: 0 PKR</p>
   <p id="delivery">Delivery Distance: 12 km</p>
   <p id="charges">Delivery Charges: 0 PKR</p>
-  <p id="advance">Advance (50%): 0 PKR</p>
+  <p id="advanceAmount">Advance (50%): 0 PKR</p>
+
+  <div class="agreement">
+    <label>
+      <input type="checkbox" id="agree">
+      I agree to pay
+    </label>
+    <p>1: 50% advance (Refundable)</p>
+    <p>2: Delivery charges Rs: 25 per KM (non-refundable if cancelled)</p>
+  </div>
+
+  <div class="phone-box">
+    <label for="phone">
+      <strong>Please enter your mobile number 📱</strong><br>
+      <small>(Order confirmation & delivery purpose)</small>
+    </label><br>
+
+    <input
+      type="tel"
+      id="phone"
+      placeholder="03XXXXXXXXX"
+      required
+    >
+
+    <p id="phoneError" style="color:red; display:none;">
+      Please enter a valid phone number
+    </p>
+  </div>
+<input type="text" id="phoneInput" placeholder="03XXXXXXXXX">
+  <div id="phoneError" style="display:none;color:red;">
+    درست فون نمبر درج کریں
+  </div>
+
+  <br>
 
   <label>
     <input type="checkbox" id="agree">
-    I agree to pay<br>
-
-    <label>1:</label><br> 50% advance (Refundable)<br>
-    <label>2:</label>
-    Delivery charges Rs: 25KM * PKR per KM  (non-refundable if cancelled)
+    میں شرائط سے متفق ہوں
   </label>
 
-  <button id="orderBtn" disabled>Order on WhatsApp</button>
-</div>
+  <br><br>
 
+  <button id="orderBtn" disabled>Order on WhatsApp</button>
+  <!-- 👆 HTML PART ENDS HERE -->
+
+</div>
 <script src="script.js"></script>
 
 
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
